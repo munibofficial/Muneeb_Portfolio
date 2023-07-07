@@ -35,3 +35,15 @@
 //   }
 //   return <Button onClick={handlePlayButton}>Play {moviename}</Button>;
 // }
+import Header from './Header.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AvatarComponent from './Avatar.jsx';
+
+export default function App() {
+  return (
+    <div className="header">
+      <Header />
+      <AvatarComponent name="Muneeb Amjad"  />
+    </div>
+  );
+}
