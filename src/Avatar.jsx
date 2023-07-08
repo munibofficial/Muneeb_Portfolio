@@ -1,24 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function AvatarComponent({ name, avatarUrl }) {
+  const [expert, setExpert] = useState('front end developer');
+
+  useEffect(() => {
+    const expertTypes = ['front end developer', 'graphics designer'];
+    let currentIndex = 0;
+
+    const intervalId = setInterval(() => {
+      currentIndex = (currentIndex + 1) % expertTypes.length;
+      setExpert(expertTypes[currentIndex]);
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <div style={{ textAlign: 'center' }}>
-      <div
-        style={{
-          width: '150px',
-          height: '150px',
-          overflow: 'hidden',
-          borderRadius: '50%',
-          margin: '0 auto',
-        }}
-      >
+    <div className="avatar-container">
+      <div className="avatar">
         <img
           src={avatarUrl}
           alt={name}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '50%',
+          }}
         />
       </div>
-      <h2>{name}</h2>
+      <h2 style={{ color: 'white'}}>{name}</h2>
+      <h1 style={{ color: 'white' }} className="expert">
+        <span className="expert-text">{expert}</span>
+      </h1>
     </div>
   );
 }
