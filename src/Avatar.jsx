@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 function AvatarComponent({ name, avatarUrl }) {
-  const [expert, setExpert] = useState('front end developer');
+  const [expert, setExpert] = useState('Front end developer');
 
   useEffect(() => {
-    const expertTypes = ['front end developer', 'graphics designer'];
+    const expertTypes = ['Front end developer', 'Graphics designer'];
     let currentIndex = 0;
 
     const intervalId = setInterval(() => {
@@ -29,7 +29,7 @@ function AvatarComponent({ name, avatarUrl }) {
           }}
         />
       </div>
-      <h2 style={{ color: 'white'}}>{name}</h2>
+      <h2 style={{ color: 'white' }}>{name}</h2>
       <h1 style={{ color: 'white' }} className="expert">
         <span className="expert-text">{expert}</span>
       </h1>

@@ -84,15 +84,15 @@ button:focus-visible {
   flex-direction: column;
   align-items: center;
   background-color: #070a31;
-  width: 100%;
-  height: 800px;
+  width: 100vw;
+  height: 700px;
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .expert {
@@ -113,4 +113,28 @@ button:focus-visible {
   to {
     width: 100%;
   }
+}
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headingContainer {
+  margin-bottom: 20px;
+}
+
+.cardsContainer {
+  display: flex;
+}
+.cardsContainer {
+  display: flex;
+}
+
+.cardsContainer > * {
+  margin-right: 10px;
+}
+
+.cardsContainer > *:last-child {
+  margin-right: 0;
 }
