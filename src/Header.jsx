@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin,FaGithub } from 'react-icons/fa';
 
 function Header() {
   const scrollToSection = (id) => {
@@ -46,8 +46,11 @@ function Header() {
             <Nav.Link href="https://www.instagram.com">
               <FaInstagram />
             </Nav.Link>
-            <Nav.Link href="https://www.instagram.com">
+            <Nav.Link href="https://www.linkedin.com">
               <FaLinkedin />
+            </Nav.Link>
+            <Nav.Link href="https://www.github.com">
+              <FaGithub />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
