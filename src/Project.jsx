@@ -1,5 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Image from './images/project1.jpg';
+
 
 function CardComp({title,image}) {
   return (
@@ -26,7 +28,7 @@ function Project() {
         <h2>Projects</h2>
       </div>
       <div className="cardsContainer">
-        <CardComp title="H6 Car Studio Content Updation" image=""/>
+        <CardComp title="H6 Car Studio Content Updation" image={Image}/>
         <CardComp title = "Marisrecruiment Web Developement"/>
         <CardComp />
         <CardComp />
