@@ -1,10 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Image from './images/project1.jpg';
-import cardComp2 from './images/cardComp2.jpg'
+import Image from './images/project2.jpg';
+import cardComp2 from './images/cardComp2.jpg';
 
-
-function CardComp({title,image}) {
+function CardComp({ title, image }) {
   return (
     <div>
       <Card style={{ width: '18rem' }}>
@@ -29,8 +28,8 @@ function Project() {
         <h2>Projects</h2>
       </div>
       <div className="cardsContainer">
-        <CardComp title="H6 Car Studio Content Updation" image={Image}/>
-        <CardComp title = "Marisrecruiment Web Developement" image={cardComp2}/>
+        <CardComp title="H6 Car Studio Content Updation" image={Image} />
+        <CardComp title="Marisrecruiment Web Developement" image={cardComp2} />
         <CardComp />
         <CardComp />
       </div>
