@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Image from './images/project1.jpg';
+import cardComp2 from './images/cardComp2.jpg'
 
 
 function CardComp({title,image}) {
@@ -29,7 +30,7 @@ function Project() {
       </div>
       <div className="cardsContainer">
         <CardComp title="H6 Car Studio Content Updation" image={Image}/>
-        <CardComp title = "Marisrecruiment Web Developement"/>
+        <CardComp title = "Marisrecruiment Web Developement" image={cardComp2}/>
         <CardComp />
         <CardComp />
       </div>
