@@ -2,6 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Image from './images/project2.jpg';
 import cardComp2 from './images/cardComp2.jpg';
+import cardComp3 from './images/cardComp3.jpg';
+
 
 function CardComp({ title, image }) {
   return (
@@ -30,8 +32,9 @@ function Project() {
       <div className="cardsContainer">
         <CardComp title="H6 Car Studio Content Updation" image={Image} />
         <CardComp title="Marisrecruiment Web Developement" image={cardComp2} />
-        <CardComp />
-        <CardComp />
+        <CardComp title="Indicascapes Web Developement" image={cardComp3} />
+        <CardComp title="Ecom Trurh Graphics " image={cardComp4} />
+
       </div>
     </div>
   );
