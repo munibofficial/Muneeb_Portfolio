@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AvatarComponent from './Avatar.jsx';
 import Image from './images/muneeb.jpg';
 import Project from './Project.jsx';
+import ContactForm from './form.jsx';
+import Footer from './footer.jsx';
 
 export default function App() {
   return (
@@ -10,9 +12,20 @@ export default function App() {
       <div className="header">
         <Header />
       </div>
-      <AvatarComponent name="Muneeb Amjad" avatarUrl={Image} />
-      <div className="projectContainer">
+      <div id="profile">
+        <AvatarComponent name="hello , I am Muneeb" avatarUrl={Image} />
+      </div>
+
+      <div className="projectContainer" id="project">
         <Project />
+      </div>
+
+      <div className="ContactForm" id="contact">
+        <ContactForm />
+      </div>
+
+      <div className="footer">
+        <Footer />
       </div>
     </>
   );

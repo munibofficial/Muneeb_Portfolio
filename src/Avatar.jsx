@@ -29,7 +29,7 @@ function AvatarComponent({ name, avatarUrl }) {
           }}
         />
       </div>
-      <h2 style={{ color: 'white' }}>{name}</h2>
+      <h2 style={{ color: 'white' , fontSize: '20px' ,marginTop:'10px' }}>{name}</h2>
       <h1 style={{ color: 'white' }} className="expert">
         <span className="expert-text">{expert}</span>
       </h1>

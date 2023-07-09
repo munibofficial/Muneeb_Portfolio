@@ -1,29 +1,54 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function Header() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar
+      bg="dark"
+      data-bs-theme="dark"
+      expand="lg"
+      className="bg-body-tertiary"
+    >
       <Container>
-        <Navbar.Brand href="#profile">Muneeb Portfolio</Navbar.Brand>
+        <Navbar.Brand onClick={() => scrollToSection('profile')}>
+          Muneeb Portfolio
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-center">
-            <Nav.Link href="#profile">Profile</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link onClick={() => scrollToSection('profile')}>
+              Profile
+            </Nav.Link>
+            <Nav.Link onClick={() => scrollToSection('project')}>
+              Projects
+            </Nav.Link>
+            <Nav.Link onClick={() => scrollToSection('contact')}>
+              Contact
+            </Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="https://www.facebook.com">
+              <FaFacebook />
+            </Nav.Link>
+            <Nav.Link href="https://www.twitter.com">
+              <FaTwitter />
+            </Nav.Link>
+            <Nav.Link href="https://www.instagram.com">
+              <FaInstagram />
+            </Nav.Link>
+            <Nav.Link href="https://www.instagram.com">
+              <FaLinkedin />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

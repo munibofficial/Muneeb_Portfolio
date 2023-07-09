@@ -83,7 +83,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #070a31;
+  background-color: #2a4364;
   width: 100vw;
   height: 700px;
 }
@@ -118,10 +118,15 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: green;
+  padding: 50px;
 }
 
 .headingContainer {
+  width: 100%;
   margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .cardsContainer {
@@ -137,4 +142,48 @@ button:focus-visible {
 
 .cardsContainer > *:last-child {
   margin-right: 0;
+}
+.ContactForm {
+  background-color: purple;
+  color: white;
+  padding: 100px;
+}
+
+.ContactForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.ContactForm button[type='submit'] {
+  background-color: #8e24aa;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ContactForm button[type='submit']:hover {
+  background-color: #7b1fa2;
+}
+
+.ContactForm textarea {
+  height: 120px;
+}
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
