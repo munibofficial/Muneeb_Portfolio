@@ -5,6 +5,7 @@ import Image from './images/muneeb.jpg';
 import Project from './Project.jsx';
 import ContactForm from './form.jsx';
 import Footer from './footer.jsx';
+import Certification from './Certificates.jsx';
 
 export default function App() {
   return (
@@ -18,6 +19,10 @@ export default function App() {
 
       <div className="projectContainer" id="project">
         <Project />
+      </div>
+
+      <div className="Certification" id="Certification">
+        <Certification />
       </div>
 
       <div className="ContactForm" id="contact">
