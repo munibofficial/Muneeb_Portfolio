@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import certificate from './images/advance react.pdf';
+import certificate from './images/advance react.jpg';
 import Image from './images/project2.jpg';
 import cardComp2 from './images/cardComp2.jpg';
 import cardComp3 from './images/cardComp3.jpg';
