@@ -22,6 +22,12 @@ function CardComp({ title, image, description }) {
 }
 
 export default function Ceertification() {
-  return <CardComp title="Advanced React
-  " description="i am developer" />;
+  return (
+    <CardComp
+      image={certificate}
+      title="Advanced React
+  "
+      description="i am developer"
+    />
+  );
 }
