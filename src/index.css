@@ -187,3 +187,20 @@ button:focus-visible {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.certificate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2a4364;
+  padding: 50px;
+}
+.headingContainer {
+  color: #ffffff;
+}
+
+.certificate-container button {
+  background-color: #2a4364;
+}
+.certificate-container button:hover {
+  background-color: #000000;
+}

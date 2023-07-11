@@ -43,7 +43,15 @@ function Project() {
   return (
     <div className="projectContainer">
       <div className="headingContainer">
-        <h2 style={{ color: 'white', textAlign: 'left', fontSize: '44px' , display: 'flex' ,justifyContent:'start' }}>
+        <h2
+          style={{
+            color: 'white',
+            textAlign: 'left',
+            fontSize: '44px',
+            display: 'flex',
+            justifyContent: 'start',
+          }}
+        >
           Projects
         </h2>
       </div>
